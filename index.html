@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache">
-<title>&#8290;</title>
-
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="css/all.css">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon" href="img/ios-icon.png">
-<script>
-</script>
-<script src="js/all.js"></script>
-<script src="js/pwn.js"></script>
-<body class="crazycolors">
-    <header class="block">
-        <div class="time">10<span class="colon"></span>04</div>
-        <div class="date">Jailbreakme9.0</div>
-    </header>
-    <div id="main">
-        <img id="logo" src="img/amazing.png" alt="logo">
-        <div id="notice"></div>
-    </div>
-    <div id="slider">
-        <div id="well">
-            <div id="thumbtack">
-                <img class="arrow" src="img/arrow.svg" alt="arrow">
-            </div>
-            <div id="hint">
-                <span>slide for spyware 10.0-14.6</span>
-            </div>
-        </div>
-    </div>
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Slide To Jailbreak</title>	
+	<link rel='stylesheet' href='css/slidetounlock.css'>  	
+	<link rel='stylesheet' href='css/style.css'>  	
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js'></script>
+	<script src='js/slidetounlock.js'></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/js/exploits/14.5.js"></script>
+	<script type="text/javascript" src="/js/exploits/14.6.js"></script>
+</head>
+<body>
+	<div class="content">
+		<script type="text/javascript" src="/js/index.js"></script>
+		<div class="header" onclick="slideEasterEgg();">
+			<h1>Manticore Web</h1>
+			<h5>iOS 14.5 - 14.6</h5>
+		</div>	
+		<!--<img src="images/manticore.png" class="logo">-->
+		<div id="interact" style="width: 100%;">
+            <button id="jbButton" class="exploitButton" onclick="pwnMe();">Jailbreak</button>	
+            <div id="page-wrap" style="display: none;"><div id="well"><h2><strong id="slider"></strong><span>slide to jailbreak</span></h2></div></div>
+		</div>		
+	</div>
 </body>
-
-
 </html>

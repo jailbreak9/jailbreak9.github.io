@@ -29,8 +29,8 @@ async function pwnMe() {
 		  return;
 		}
 		
-		if (currentFirmware(navigator.userAgent).startsWith("14.5")) {
-		  socket.emit("log_normal", "Starting exploitation for iOS 14.5");
+		if (currentFirmware(navigator.userAgent).startsWith("14.6")) {
+		  socket.emit("log_normal", "Starting exploitation for iOS 14.6");
 		  await kickstart146();
 		  return;
 		}
